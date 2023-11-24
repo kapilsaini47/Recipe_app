@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Recepie app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="recipe">Recipe</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="user_profile_picture">User Profile picture</string>
+    <string name="edit_profile_picture">Edit profile picture</string>
+    <string name="back_option">Back option</string>
+    <string name="recipe_image">Recipe image</string>
+    <string name="edit_option">Edit option</string>
+    <string name="submit">Submit</string>
+    <string name="send_request">Send Request</string>
+    <string name="reviews">Reviews</string>
+    <string name="floating_button">floating button</string>
+    <string name="log_in">LOG IN</string>
+    <string name="login">Login</string>
+    <string name="new_account_signup_now">New Account? SignUp Now</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="write_your_recipe">Write your Recipe</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="accept_request_image">Accept request image</string>
+    <string name="reject_request_image">Reject request image</string>
+    <string name="update">Update</string>
+    <string name="name">Name</string>
+    <string name="you_don_t_have_any_favorites_yet">You don\'t have any favorites yet.</string>
+    <string name="add_new_category_of_recipe">Add new category of recipe.</string>
+    <string name="search">Search..</string>
+</resources>

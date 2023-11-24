@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67519069939",
+    "project_id": "recepie-app-8f5f2",
+    "storage_bucket": "recepie-app-8f5f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67519069939:android:51093d52f68bd0ef2f8186",
+        "android_client_info": {
+          "package_name": "com.dating.recepieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUd8hkLfJobHDm7UFRO3gee3ShbcN2jiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

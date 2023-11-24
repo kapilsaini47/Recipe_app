@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.AddNewRecipe">
+
+        <ImageView
+            android:id="@+id/ivBackNewRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/back_option"
+            android:src="@drawable/baseline_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Create Recipe"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBackNewRecipe"
+            app:layout_constraintStart_toEndOf="@+id/ivBackNewRecipe"
+            app:layout_constraintTop_toTopOf="@+id/ivBackNewRecipe" />
+
+        <ImageView
+            android:id="@+id/ivRecipeImage"
+            android:layout_width="320dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/recipe_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/recipe_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/ivNewRecipeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/edit_option"
+            android:src="@drawable/baseline_edit"
+            app:layout_constraintEnd_toEndOf="@+id/ivRecipeImage"
+            app:layout_constraintTop_toTopOf="@+id/ivRecipeImage" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Recipe"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRecipeImage" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiLayoutRecipeTitle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/recipe_name"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/tiLayoutRecipeMethod"
+            app:layout_constraintStart_toStartOf="@+id/tiLayoutRecipeMethod"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiLayoutRecipeMethod"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/write_your_recipe"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tiLayoutRecipeTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipeMethod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Private"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tiLayoutRecipeMethod"
+            app:layout_constraintTop_toBottomOf="@+id/tiLayoutRecipeMethod" />
+
+        <TextView
+            android:id="@+id/tvPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Public"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrivate"
+            app:layout_constraintEnd_toEndOf="@+id/tiLayoutRecipeMethod"
+            app:layout_constraintTop_toTopOf="@+id/tvPrivate" />
+
+        <Button
+            android:id="@+id/btnSubmitNewRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPublic"
+            app:layout_constraintStart_toStartOf="@+id/tvPrivate"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
